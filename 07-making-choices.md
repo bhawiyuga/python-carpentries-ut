@@ -93,18 +93,24 @@ if (1 < 0) or (1 >= 0):
 
 ---
 
-## Checking our Data
+## Detecting Suspicious Inflammation Patterns
 
-Loading data:
+- **Observation**: 
+  - Maximum daily inflammation increases by one unit per day
+  - The minima per day were all zero
+- **Proposed Detection Method**:
+  1. Check if max inflammation on day 0 equals to 0 **and** day 20 equals to 20
+  2. Check if all daily minima are zero
+  3. Otherwise, OK
+
+---
+
+## Checking our Data (code)
 
 ```python
 import numpy
 data = numpy.loadtxt(fname='inflammation-01.csv', delimiter=',')
-```
 
-Checking for suspicious patterns:
-
-```python
 max_inflammation_0 = numpy.amax(data, axis=0)[0]
 max_inflammation_20 = numpy.amax(data, axis=0)[20]
 
@@ -115,24 +121,9 @@ elif numpy.sum(numpy.amin(data, axis=0)) == 0:
 else:
     print('Seems OK!')
 ```
-
----
-
-## Exercises
-
-1. How Many Paths?
-2. What Is Truth?
-3. That's Not Not What I Meant
-4. Close Enough
-5. In-Place Operators
-6. Sorting a List Into Buckets
-7. Counting Vowels
-
 ---
 
 ## Exercise 1: How Many Paths?
-
-Consider this code:
 
 ```python
 if 4 > 5:
@@ -142,9 +133,7 @@ elif 4 == 5:
 elif 4 < 5:
     print('C')
 ```
-
-Which of the following would be printed if you were to run this code? Why?
-
+Which of the following would be printed if you were to run this code?
 A. A
 B. B
 C. C
@@ -154,7 +143,7 @@ D. B and C
 
 ## Exercise 2: What Is Truth?
 
-Explain the rule for which values are considered true and which are considered false after running this code:
+Which values are considered true and which are considered false? 
 
 ```python
 if '':
@@ -177,7 +166,6 @@ if 1:
 
 Write some `if` statements using `not` to test the rule you formulated in the previous challenge.
 
-Example:
 ```python
 if not '':
     print('empty string is not true')
@@ -252,7 +240,5 @@ Write a loop that counts the number of vowels in a character string.
 - `X or Y` is true if either X or Y, or both, are true
 - Zero, empty string, and empty list are considered false; all other numbers, strings, and lists are considered true
 - `True` and `False` represent truth values
-
----
 
 

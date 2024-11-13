@@ -130,51 +130,47 @@ favorite_ice_cream()
 <li>Identifying Variable Name Errors</li>
 <li>Identifying Index Errors</li>
 </ol>
-<p>Certainly! I'll add slides for the exercises as well. Here's the updated Marp slide deck:</p>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-markdown">---
-marp: true
-<span class="hljs-section">theme: default
----</span>
-
-<span class="hljs-section"># Errors and Exceptions</span>
-
----
-
-<span class="hljs-section">## Objectives</span>
-
-<span class="hljs-bullet">-</span> Read a traceback and determine error location and type
-<span class="hljs-bullet">-</span> Describe situations where different error types occur:
-<span class="hljs-bullet">  -</span> Syntax errors
-<span class="hljs-bullet">  -</span> Indentation errors
-<span class="hljs-bullet">  -</span> Name errors
-<span class="hljs-bullet">  -</span> Index errors
-<span class="hljs-bullet">  -</span> Missing file errors
-
----
-
-<span class="hljs-section">## Background</span>
-
-<span class="hljs-bullet">-</span> All programmers encounter errors
-<span class="hljs-bullet">-</span> Understanding error types helps in fixing them
-<span class="hljs-bullet">-</span> Python errors have a specific form called a traceback
-
----
-
-<span class="hljs-section">## Traceback Example</span>
-
-<span class="hljs-code">```python
-def favorite_ice_cream():
-    ice_creams = [
-        &#x27;chocolate&#x27;,
-        &#x27;vanilla&#x27;,
-        &#x27;strawberry&#x27;
-    ]
-    print(ice_creams[3])
-
-favorite_ice_cream()
-</span></code></pre>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="14" data-theme="gaia" lang="en-US" style="--theme:gaia;">
+<h1 id="errors-and-exceptions-1">Errors and Exceptions</h1>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="15" data-theme="gaia" lang="en-US" style="--theme:gaia;">
+<h2 id="objectives-1">Objectives</h2>
+<ul>
+<li>Read a traceback and determine error location and type</li>
+<li>Describe situations where different error types occur:
+<ul>
+<li>Syntax errors</li>
+<li>Indentation errors</li>
+<li>Name errors</li>
+<li>Index errors</li>
+<li>Missing file errors</li>
+</ul>
+</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="16" data-theme="gaia" lang="en-US" style="--theme:gaia;">
+<h2 id="background-1">Background</h2>
+<ul>
+<li>All programmers encounter errors</li>
+<li>Understanding error types helps in fixing them</li>
+<li>Python errors have a specific form called a traceback</li>
+</ul>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="17" data-theme="gaia" lang="en-US" style="--theme:gaia;">
+<h2 id="traceback-example-1">Traceback Example</h2>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">favorite_ice_cream</span>():
+    ice_creams = [
+        <span class="hljs-string">&#x27;chocolate&#x27;</span>,
+        <span class="hljs-string">&#x27;vanilla&#x27;</span>,
+        <span class="hljs-string">&#x27;strawberry&#x27;</span>
+    ]
+    <span class="hljs-built_in">print</span>(ice_creams[<span class="hljs-number">3</span>])
+
+favorite_ice_cream()
+</code></pre>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="18" data-theme="gaia" lang="en-US" style="--theme:gaia;">
 <h2 id="traceback-analysis-1">Traceback Analysis</h2>
 <ul>
 <li>Two levels in the traceback</li>
@@ -184,7 +180,7 @@ favorite_ice_cream()
 <li>Message: &quot;list index out of range&quot;</li>
 </ul>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="15" data-theme="gaia" lang="en-US" style="--theme:gaia;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="19" data-theme="gaia" lang="en-US" style="--theme:gaia;">
 <h2 id="long-tracebacks-1">Long Tracebacks</h2>
 <ul>
 <li>Can be very long (up to 20 levels)</li>
@@ -192,7 +188,7 @@ favorite_ice_cream()
 <li>Actual error usually at the bottom-most level</li>
 </ul>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="16" data-theme="gaia" lang="en-US" style="--theme:gaia;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="20" data-theme="gaia" lang="en-US" style="--theme:gaia;">
 <h2 id="reading-error-messages-1">Reading Error Messages</h2>
 <p>Practice:</p>
 <ul>
@@ -201,7 +197,7 @@ favorite_ice_cream()
 <li>Determine error type and message</li>
 </ul>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="17" data-theme="gaia" lang="en-US" style="--theme:gaia;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="21" data-theme="gaia" lang="en-US" style="--theme:gaia;">
 <h2 id="syntax-errors-1">Syntax Errors</h2>
 <ul>
 <li>Caused by incorrect Python syntax</li>
@@ -214,7 +210,7 @@ favorite_ice_cream()
 </li>
 </ul>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="18" data-theme="gaia" lang="en-US" style="--theme:gaia;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="22" data-theme="gaia" lang="en-US" style="--theme:gaia;">
 <h2 id="tabs-and-spaces-1">Tabs and Spaces</h2>
 <ul>
 <li>Mixing tabs and spaces can cause indentation errors</li>
@@ -222,7 +218,7 @@ favorite_ice_cream()
 <li>Python doesn't allow mixing tabs and spaces</li>
 </ul>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="19" data-theme="gaia" lang="en-US" style="--theme:gaia;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="23" data-theme="gaia" lang="en-US" style="--theme:gaia;">
 <h2 id="variable-name-errors-1">Variable Name Errors</h2>
 <ul>
 <li>NameError: occurs when using undefined variables</li>
@@ -235,14 +231,14 @@ favorite_ice_cream()
 </li>
 </ul>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="20" data-theme="gaia" lang="en-US" style="--theme:gaia;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="24" data-theme="gaia" lang="en-US" style="--theme:gaia;">
 <h2 id="index-errors-1">Index Errors</h2>
 <ul>
 <li>Occur when accessing non-existent items in containers</li>
 <li>Example: Trying to access index 3 in a 3-item list</li>
 </ul>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="21" data-theme="gaia" lang="en-US" style="--theme:gaia;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="25" data-theme="gaia" lang="en-US" style="--theme:gaia;">
 <h2 id="file-errors-1">File Errors</h2>
 <ul>
 <li>FileNotFoundError: when reading non-existent files</li>
@@ -250,10 +246,10 @@ favorite_ice_cream()
 <li>OSErrors: general input/output problems</li>
 </ul>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="22" data-theme="gaia" lang="en-US" style="--theme:gaia;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="26" data-theme="gaia" lang="en-US" style="--theme:gaia;">
 <h1 id="exercises-1">Exercises</h1>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="23" data-theme="gaia" lang="en-US" style="--theme:gaia;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="27" data-theme="gaia" lang="en-US" style="--theme:gaia;">
 <h2 id="exercise-1-identifying-syntax-errors">Exercise 1: Identifying Syntax Errors</h2>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">another_function</span>
   <span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;Syntax errors are annoying.&#x27;</span>)
@@ -267,7 +263,7 @@ favorite_ice_cream()
 <li>Repeat steps 2 and 3 until all errors are fixed</li>
 </ol>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="24" data-theme="gaia" lang="en-US" style="--theme:gaia;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="28" data-theme="gaia" lang="en-US" style="--theme:gaia;">
 <h2 id="exercise-2-identifying-variable-name-errors">Exercise 2: Identifying Variable Name Errors</h2>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python"><span class="hljs-keyword">for</span> number <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">10</span>):
     <span class="hljs-comment"># use a if the number is a multiple of 3, otherwise use b</span>
@@ -284,7 +280,7 @@ favorite_ice_cream()
 <li>Fix the error and repeat steps 2-4 until all errors are fixed</li>
 </ol>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="25" data-theme="gaia" lang="en-US" style="--theme:gaia;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="29" data-theme="gaia" lang="en-US" style="--theme:gaia;">
 <h2 id="exercise-3-identifying-index-errors">Exercise 3: Identifying Index Errors</h2>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-python">seasons = [<span class="hljs-string">&#x27;Spring&#x27;</span>, <span class="hljs-string">&#x27;Summer&#x27;</span>, <span class="hljs-string">&#x27;Fall&#x27;</span>, <span class="hljs-string">&#x27;Winter&#x27;</span>]
 <span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;My favorite season is &#x27;</span>, seasons[<span class="hljs-number">4</span>])

@@ -119,12 +119,6 @@ Practice:
 2. Identifying Variable Name Errors
 3. Identifying Index Errors
 
-Certainly! I'll add slides for the exercises as well. Here's the updated Marp slide deck:
-
-```markdown
----
-marp: true
-theme: default
 ---
 
 # Errors and Exceptions
